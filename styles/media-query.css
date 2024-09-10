@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+:root {
+  --cor0: #49a09d;
+  --cor1: #5f2c82;
+}
+
+@media screen and (min-width:768px) and (max-width: 992px) {
+  body {
+    background-image: linear-gradient(var(--cor0), var(--cor1));
+  }
+  
+  #login {
+    width: 95vw;
+    height: 290px;
+  }
+
+  #login > #imagem {
+      background-image: url(../imagens/pexels-silviopelegrin-20369269.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left ;
+      float: left;
+      width: 30vw;
+      height: 100vh;
+  }
+
+  #login > #formulario {
+    float: right;
+    width: 65vw;
+    height: 100vh;
+  }
+  
+  #formulario > h1 {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (min-width:992px){
+    body {
+      background-image: linear-gradient(var(--cor0), var(--cor1));
+    }
+    #login {
+      display: flex;
+      width: 990px;
+      height: 350px;
+    }
+
+    #login > #imagem {
+      background-image: url(../imagens/pexels-silviopelegrin-20369269.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left bottom;
+      float: left;
+      width: 50vw;
+      height: 100vh;
+    }
+
+    #login > #formulario {
+      float: right;
+      width: 50vw;
+    }
+
+    #formulario > h1 {
+      font-size: 1.8em;
+    }
+}

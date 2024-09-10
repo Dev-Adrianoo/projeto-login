@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/* 
+  Paleta de cores
+  Verde: #49a09d
+  Lilás: #5f2c82
+*/
+
+:root {
+  --cor0: #49a09d;
+  --cor1: #5f2c82;
+}
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--cor1);
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1, p {
+  text-align: center;
+}
+
+#login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  width: 350px;
+  height: 490px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.527);
+
+  transform: translate(-50%, -50%);
+  transition: width 0.3s heigth 0.3s;
+  transition-timing-function: ease;
+}
+
+#login > #imagem {
+  display: block;
+  background: var(--cor1) url(../imagens/pexels-silviopelegrin-20369269.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+#login > #formulario {
+  display: block;
+  padding: 10px;
+}
+
+
+#formulario > h1 {
+  margin-bottom: 10px;
+}
+
+.campo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: var(--cor1);
+  border: 3px var(--cor1) solid;
+  width: 100%;
+  display: block;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.campo > label {
+  display: none;
+}
+
+.campo > span {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  width: 40px;
+  padding: 4px;
+}
+
+.campo > input {
+  background-color: #5ed3cf;
+  font-size: 1em;
+  height: 100%;
+  width: calc(100% - 45px);
+  border: none;
+  border-radius: 8px;
+  padding: 4px;
+  transform: translateY(-12px);
+}
+
+.campo > input:focus-within {
+  background-color: white;
+}
+
+form > input[type=submit] {
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  background-color: var(--cor0);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+form > input[type=submit]:hover {
+  background-color: #2e6462;
+} 
+
+form > a.botao {
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  border: 2px solid #49a09d ;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #132c2b;
+  text-align: center;
+}
+
+form > a.botao > span {
+  background-color: white;
+  font-size: 1.1em;
+  padding-top: 10px;
+}
